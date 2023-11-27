@@ -22,7 +22,10 @@ Minimalistic photo calendar in LaTeX
 
 ## Output
 
-![Example output](example.pdf)
+![Example title](example-0.jpg)
+![Example Jan](example-1.jpg)
+![Example Feb](example-2.jpg)
+[example.pdf](example.pdf)
 
 ## Options
 
@@ -37,10 +40,10 @@ Minimalistic photo calendar in LaTeX
 ## Calendar Page
 
 - `photo` specifies the image to be placed on the page (default: example image). The photo is scaled to fill the page and cropped if necessary.
-- `anchor` specifies the anchor point of the image (default: `center`), can be one of `north east`, `south east`, `south west`, `north west`, `center`: For example, `anchor=south east` alligns the bottom right corner of the image with the bottom right corner of the page and crops (if necessary) the top and left side of the image.
+- `anchor` specifies the anchor point of the image (default: `center`), can be one of `north east`, `south east`, `south west`, `north west`, `center`: For example, `anchor=south east` aligns the bottom right corner of the image with the bottom right corner of the page and crops (if necessary) the top and left side of the image. Thanks to [mbert](https://tex.stackexchange.com/questions/702331/how-to-compare-aspect-ratios/702336#702336) for help with comparing aspect ratios.
 - `cal` specifies whether a calendar should be printed on the page (default: `true`)
 - `\caption{}` specifies the caption of the page
-- `\subcaption{}` specifies the subcaption of the page (shown in place of the calendar, should only be used if `cal=false`)
+- `\subcaption{}` specifies the sub-caption of the page (shown in place of the calendar, should only be used if `cal=false`)
 
 ```latex
 \begin{page}[photo=photo,anchor=south east,cal=false]

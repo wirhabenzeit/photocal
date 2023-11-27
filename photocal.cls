@@ -99,7 +99,7 @@
         \coordinate (image south west) at (current page.south west);
         \coordinate (image center) at ([xshift=-\sidebarWidth/2]current page.center);
         \node[anchor=\cp@anchor,inner sep=0pt] at (image \cp@anchor) {%
-        \ifnum\fpeval{\the\imageFileWidth/\the\imageFileHeight > \the\imageWidth/\the\calHeight}=1%
+        \ifnum\fpeval{\the\imageFileWidth/\the\imageFileHeight > \the\imageWidth/\the\calHeight}=1% thanks to mbert https://tex.stackexchange.com/questions/702331/how-to-compare-aspect-ratios/702336#702336
              \includegraphics[height=\calHeight,keepaspectratio=true]{\cp@photo}%
         \else%
             \includegraphics[width=\imageWidth,keepaspectratio=true]{\cp@photo}%
